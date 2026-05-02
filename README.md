@@ -177,6 +177,9 @@ Each model was trained on three dataset versions: **original** (imbalanced), **u
 
 ## 11. Conclusion
 
+<img width="2609" height="2237" alt="model_comparison_full" src="https://github.com/user-attachments/assets/b4447d84-8a96-4c01-8574-8efca6d30802" />
+
+
 Machine learning can provide meaningful early readmission risk signals for diabetic patients, surpassing the limitations of traditional rule-based tools. The best-performing model — **Random Forest with undersampling** — achieved a ROC-AUC of 0.65 and correctly identified 62% of patients who would be readmitted within 30 days. Results were more sensitive to class-balancing strategy than to model architecture, and feature importance analysis confirmed that clinical utilization metrics (lab procedures, medications, prior visits) are the most predictive signals in this dataset.
 
 
