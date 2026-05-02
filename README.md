@@ -167,8 +167,7 @@ discharge_disp_1       ██████                     0.019
 - **`visits_sum`** (engineered) — total healthcare utilization across all visit types is more predictive than any single visit type alone
 - **Circulatory diagnosis** — patients with a primary circulatory diagnosis (ICD-9 code 428: heart failure) show disproportionately high readmission rates
 
-> **Note:** SHAP value analysis is planned for Capstone 2 to provide per-patient, directional explanations of model predictions beyond aggregate feature importance.
-
+> 
 ---
 
 ## 10. Key Insights
