@@ -128,7 +128,7 @@ Each model was trained on three dataset versions: **original** (imbalanced), **u
 
 | Model | Sampling | ROC-AUC | Recall | Precision | F1 |
 |---|---|---|---|---|---|
-| **Random Forest** ✅ | Undersampling | **0.65** | **62%** | ~20% | ~0.30 |
+| **Random Forest** | Undersampling | **0.65** | **62%** | ~20% | ~0.30 |
 | Random Forest | Class weights | 0.63 | 58% | ~19% | ~0.28 |
 | XGBoost | Undersampling | 0.63 | 55% | ~19% | ~0.27 |
 | MLP | Undersampling | 0.60 | 50% | ~18% | ~0.25 |
