@@ -26,6 +26,11 @@ We frame readmission as a **binary classification task** (readmitted within 30 d
 | Best ROC-AUC | 0.65 (Random Forest + undersampling) |
 | Best Recall | 62% of readmissions caught |
 
+
+<img width="1923" height="765" alt="01_class_distribution" src="https://github.com/user-attachments/assets/f296b901-eece-4236-87a9-867bbe848e49" />
+
+
+
 ---
 
 ## 3. Data
@@ -107,6 +112,10 @@ max_glu_serum         █████                    0.015
 
 Each model was trained on three dataset versions: **original** (imbalanced), **undersampling**, and **SMOTE oversampling** — to evaluate how class balancing affects prediction.
 
+<img width="1923" height="874" alt="07_model_comparison_auc" src="https://github.com/user-attachments/assets/22005e6f-a8cc-42e6-a5ae-f16d55475351" />
+
+
+
 ---
 
 ## 7. Model Training
@@ -183,15 +192,6 @@ discharge_disp_1       ██████                     0.019
 
 Machine learning can provide meaningful early readmission risk signals for diabetic patients, surpassing the limitations of traditional rule-based tools. The best-performing model — **Random Forest with undersampling** — achieved a ROC-AUC of 0.65 and correctly identified 62% of patients who would be readmitted within 30 days. Results were more sensitive to class-balancing strategy than to model architecture, and feature importance analysis confirmed that clinical utilization metrics (lab procedures, medications, prior visits) are the most predictive signals in this dataset.
 
----
-
-## 12. Future Work
-
-1. Integrate **SHAP values** for per-patient prediction explanations and model transparency
-2. **Hyperparameter tuning** via grid search and Bayesian optimization
-3. Incorporate **external datasets** (e.g., MIMIC-III) to enrich clinical feature coverage
-4. Explore **age-stratified ensembles** and cluster-based sub-models for older patient cohorts
-5. Deploy a **Streamlit or Flask dashboard** for healthcare provider use
 
 ---
 
