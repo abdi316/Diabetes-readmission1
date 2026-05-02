@@ -1,9 +1,9 @@
-# Diabetes-readmission-prediction-model
+# Diabetes-readmission-prediction
 
 Predicting Early Readmission of Diabetic Patients
 Overview
 
-This project predicts 30-day hospital readmissions for diabetic patients using machine learning. The goal is to identify high-risk patients early to improve outcomes and reduce healthcare costs.
+This project predicts 30 day hospital readmissions for diabetic patients using machine learning. The goal is to identify high risk patients early to improve outcomes and reduce healthcare costs.
 
 Dataset
 Source: UCI Machine Learning Repository
