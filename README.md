@@ -209,28 +209,33 @@ jupyter nbconvert --to notebook --execute notebooks/4_complementary_experiments.
 ## 14. Repository Structure
 
 ```
-diabetes-readmission/
-│
-├── notebooks/
-│   ├── 1_preprocessing.ipynb         # Cleaning, imputation, feature engineering, pipeline
-│   ├── 2_eda.ipynb                   # EDA — class distributions, feature importance, diagnosis breakdowns
-│   ├── 3_modeling.ipynb              # Baseline and advanced model training (RF, XGBoost, MLP)
-│   └── 4_complementary_experiments.ipynb  # Age-stratified and cluster-based ensemble experiments
-│
+diabetes-readmission-prediction/
+├── README.md
+├── requirements.txt
 ├── data/
-│   ├── X_train.csv                   # Preprocessed training features (output of notebook 1)
-│   ├── X_test.csv                    # Preprocessed test features
-│   ├── y_train.csv                   # Binary readmission labels — training set
-│   └── y_test.csv                    # Binary readmission labels — test set
-│
-├── src/
-│   ├── preprocessing/
-│   │   ├── transformers.py           # Custom sklearn-compatible transformer classes
-│   │   └── helpers.py                # Utility functions: load_dataset(), transform_label()
-│   └── evaluation.py                 # evaluate_model(), roc_auc(), undersample(), CombinedModel
-│
-├── requirements.txt                  # All Python dependencies with pinned versions
-└── README.md                         # This file
+│   └── data.csv
+├── notebooks/
+│   ├── 1_data_analysis.ipynb
+│   ├── 2_model_selection.ipynb
+│   └── 3_evaluation.ipynb
+├── models/
+│   └── random_forest_best.pkl
+├── results/
+│   └── model_comparison.csv
+└── images/
+    ├── 01_class_distribution.png
+    ├── 02_missing_values.png
+    ├── 03_age_distribution.png
+    ├── 04_diagnosis_categories.png
+    ├── 05_numeric_features_boxplots.png
+    ├── 06_feature_importance.png
+    ├── 07_model_comparison_auc.png
+    ├── 08_rfecv_feature_selection.png
+    ├── 09_learning_curve.png
+    ├── 10_tsne_2d.png
+    ├── shap_beeswarm.png
+    ├── shap_bar_summary.png
+    └── shap_waterfall.png
 ```
 
 ---
