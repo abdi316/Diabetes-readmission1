@@ -88,16 +88,8 @@ After binarization: **88% negative / 12% positive** — a heavily imbalanced dat
 ### Top Predictive Features (from EDA)
 
 ```
-diag1_428             ████████████████████████ 0.080
-num_ipatient          █████████████████████    0.062
-num_medications       ██████████████████       0.055
-time_in_hospital      ████████████████         0.045
-num_diagnoses         ██████████████           0.042
-primarydag=circulatory████████████             0.038
-age                   ██████████               0.032
-num_emergency         ████████                 0.025
-change=chr            ███████                  0.022
-max_glu_serum         █████                    0.015
+<img width="1625" height="1021" alt="06_feature_importance (1)" src="https://github.com/user-attachments/assets/d214f9a9-a907-4dbb-8bbc-ebcdfe6227d6" />
+
 ```
 
 ---
@@ -149,6 +141,9 @@ Each model was trained on three dataset versions: **original** (imbalanced), **u
 - **Sampling strategy mattered more than model architecture** — undersampling consistently outperformed oversampling across all three models
 - Neural networks did not outperform Random Forest on this structured tabular dataset
 
+<img width="1473" height="721" alt="08_rfecv_feature_selection" src="https://github.com/user-attachments/assets/650d29f6-cf7b-4b9e-a61a-f57051a8f361" />
+
+
 ---
 
 ## 9. Model Interpretation
@@ -156,16 +151,8 @@ Each model was trained on three dataset versions: **original** (imbalanced), **u
 ### Feature Importance (Best Random Forest Model)
 
 ```
-num_lab_procedures     ██████████████████████████ 0.105
-num_medications        ████████████████████████   0.088
-number_inpatient       ██████████████████████     0.085
-visits_sum             ████████████████████       0.068
-time_in_hospital       ████████████████           0.060
-age                    ████████████               0.042
-number_diagnoses       ████████████               0.040
-num_procedures         ████████████               0.038
-number_emergency       ███████                    0.020
-discharge_disp_1       ██████                     0.019
+<img width="1923" height="737" alt="03_age_distribution" src="https://github.com/user-attachments/assets/a1bf5ecc-1846-48a2-a15e-b11434685b97" />
+
 ```
 
 ### What Drives Predictions
