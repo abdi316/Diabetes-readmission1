@@ -4,11 +4,6 @@
 **Course:** DATA 4382 — Spring 2026  
 **Instructor:** Professor Rostami
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-teal)
-![XGBoost](https://img.shields.io/badge/XGBoost-2.0.0-orange)
-![Task](https://img.shields.io/badge/Task-Binary%20Classification-purple)
-
 ---
 
 ## 1. Business Problem / Motivation
