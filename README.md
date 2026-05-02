@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Business Problem / Motivation
+## 1. Motivation
 
 Diabetes is a chronic, incurable condition and one of the leading drivers of hospital readmission costs in the United States. Patients readmitted within 30 days represent a major financial and clinical burden — for both patients and healthcare systems — yet traditional risk tools like the **LACE index** perform poorly on this population. They fail to capture subtle interactions between demographic, clinical, and behavioral features that separate high-risk patients from low-risk ones.
 
